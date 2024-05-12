@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background: #111729;
+  font-family: Outfit, sans-serif;
+  font-optical-sizing: auto;
+}
+
+.quote {
+  width: 70dvw;
+  min-width: min-content;
+  max-width: 500px;
+}
+
+.quote__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 15px;
+  background-image: url("../images/bg-image-random-quote.svg");
+  background-size: cover;
+  background-color: #20293a;
+  padding: 2rem 1rem;
+}
+
+.quote__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.quote__author {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.quote__tags {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.quote__tag {
+  border: 1px solid #6466e9;
+  border-radius: 10px;
+  padding: 0.125rem 1rem;
+  color: #6466e9;
+  font-size: 0.625rem;
+}
+
+.quote__text {
+  color: #4a5567;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.quote__text::before {
+  position: relative;
+  right: -0.2rem;
+  content: open-quote;
+}
+
+.quote__text::after {
+  position: relative;
+  left: -0.3rem;
+  content: close-quote;
+}
+
+.quote__buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.quote__button {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  outline: 1px solid #97a3b626;
+  border: none;
+  background: none;
+  padding: 0.2rem 1rem;
+}
+
+.quote__button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.quote__button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.quote__button:hover {
+  background: #4a556726;
+}
+
+.quote__button:active {
+  transform: translateY(1px);
+}

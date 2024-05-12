@@ -8,9 +8,47 @@
       href="images/Cute-Cat-icon.png"
       type="image/x-icon"
     />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Random Quote</title>
   </head>
   <body>
-    Hallo Boppers
+    <section class="quote">
+      <div class="quote__container">
+        <header class="quote__header">
+          <h1 id="quote-author" class="quote__author">George Bernard Show</h1>
+          <div id="quote-tags" class="quote__tags">
+            <div class="quote__tag">Famous Quotes</div>
+            <div class="quote__tag">Inspirational</div>
+          </div>
+        </header>
+        <blockquote id="quote-text" class="quote__text">
+          Learn from yesterday, live for today, hope for tomorrow.
+        </blockquote>
+      </div>
+      <div class="quote__buttons">
+        <button id="random" class="quote__button">
+          <img
+            class="quote__button-image"
+            src="images/Regroup.svg"
+            alt="random quote"
+          />
+        </button>
+        <button id="copy" class="quote__button">
+          <img
+            class="quote__button-image"
+            src="images/link.svg"
+            alt="copy quote"
+          />
+        </button>
+      </div>
+    </section>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
